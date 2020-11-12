@@ -11,6 +11,6 @@ describe('Uploading', function () {
     it('Check tha file could be uploaded', async () => {
         await browser.get(urls.url_upload);
         await downloadPage.downloadFile(file.path);
-        expect(await downloadPage.checkDownloadFile(file.nameFile)).to.equal(true);
+        expect(await downloadPage.checkDownloadFile(file.fileName)).to.equal(true);
     });
 });

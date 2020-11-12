@@ -1,10 +1,8 @@
 const path = require('path')
 
 class Files {
-    constructor() {
-        this.nameFile = 'test.txt';
-        this.path =path.resolve('testData/' + this.nameFile);
-    }
+    fileName = 'test.txt';
+    path = path.resolve('testData/' + this.fileName);
 }
 
 module.exports = Files;
